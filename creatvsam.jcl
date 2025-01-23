@@ -10,12 +10,7 @@
      DELETE FRANCK.FINANCE.CLIENT.ESDS PURGE ERASE        
      DELETE FRANCK.FINANCE.REGION.KSDS PURGE ERASE        
      DELETE FRANCK.FINANCE.NATCOM.KSDS PURGE ERASE        
-     DELETE FRANCK.FINANCE.PROFESSI.KSDS PURGE ERASE      
-     DELETE FRANCK.FINANCE.CLIENT.ESDSCOMP PURGE ERASE    
-     DELETE FRANCK.FINANCE.CLIENT.ESDSFONC PURGE ERASE    
-     DELETE FRANCK.FINANCE.CLIENT.ESDSMEDE PURGE ERASE    
-     DELETE FRANCK.FINANCE.CLIENT.ESDSCR PURGE ERASE      
-     DELETE FRANCK.FINANCE.CLIENT.ESDSDB PURGE ERASE     
+     DELETE FRANCK.FINANCE.PROFESSI.KSDS PURGE ERASE        
 /*==============================================*/       
 /* -> CREATION DU ESDS DES CLIENTS              */       
 /*==============================================*/       
@@ -49,87 +44,7 @@
      IF LASTCC=0 THEN -                                       
       REPRO INDATASET (FRANCK.FINANCE.CLIENT.TRIEASC) -       
             OUTDATASET (FRANCK.FINANCE.CLIENT.KSDS)           
-      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.KSDS)      
-/*==============================================*/            
-/* -> CREATION DU ESDS DES CLIENTS COMPTABLE    */            
-/*==============================================*/            
-    DEFINE CLUSTER (NAME(FRANCK.FINANCE.CLIENT.ESDSCOMP) -    
-           TRACK(1,1)                       -                 
-           VOL(FDDBAS)                      -                 
-           CISZ (4096)                      -                 
-           RECORDSIZE(80,80)                -                 
-           SHAREOPTIONS(1,3)                -                 
-           NONINDEXED                       -                 
-           REUSE)                         -                   
-     DATA (NAME(FRANCK.FINANCE.CLIENT.ESDSCOMP.DATA))         
-     IF LASTCC=0 THEN -                                       
-      REPRO INDATASET (FRANCK.FINANCE.CLIENT.COMPTABL) -      
-            OUTDATASET (FRANCK.FINANCE.CLIENT.ESDSCOMP)       
-      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.ESDSCOMP)   
-/*==============================================*/             
-/* -> CREATION DU ESDS DES CLIENTS FONCTIONNAIRE*/             
-/*==============================================*/             
-    DEFINE CLUSTER (NAME(FRANCK.FINANCE.CLIENT.ESDSFONC) -     
-           TRACK(1,1)                       -                  
-           VOL(FDDBAS)                      -                  
-           CISZ (4096)                      -                  
-           RECORDSIZE(80,80)                -                  
-           SHAREOPTIONS(1,3)                -                  
-           NONINDEXED                       -                  
-           REUSE)                         -                    
-     DATA (NAME(FRANCK.FINANCE.CLIENT.ESDSFONC.DATA))          
-     IF LASTCC=0 THEN -                                        
-      REPRO INDATASET (FRANCK.FINANCE.CLIENT.FONCTION) -       
-            OUTDATASET (FRANCK.FINANCE.CLIENT.ESDSFONC)        
-      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.ESDSFONC)       
- /*==============================================*/          
- /* -> CREATION DU ESDS DES CLIENTS MEDECIN      */          
- /*==============================================*/          
-     DEFINE CLUSTER (NAME(FRANCK.FINANCE.CLIENT.ESDSMEDE) -  
-            TRACK(1,1)                       -               
-            VOL(FDDBAS)                      -               
-            CISZ (4096)                      -               
-            RECORDSIZE(80,80)                -               
-            SHAREOPTIONS(1,3)                -               
-            NONINDEXED                       -               
-            REUSE)                         -                 
-      DATA (NAME(FRANCK.FINANCE.CLIENT.ESDSMEDE.DATA))       
-      IF LASTCC=0 THEN -                                     
-       REPRO INDATASET (FRANCK.FINANCE.CLIENT.MEDECIN) -     
-             OUTDATASET (FRANCK.FINANCE.CLIENT.ESDSMEDE)     
-       LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.ESDSMEDE)   
-/*==============================================*/           
-/* -> CREATION DU ESDS DES CLIENTS CR           */           
-/*==============================================*/           
-    DEFINE CLUSTER (NAME(FRANCK.FINANCE.CLIENT.ESDSCR) -     
-           TRACK(1,1)                       -                
-           VOL(FDDBAS)                      -                
-           CISZ (4096)                      -                
-           RECORDSIZE(80,80)                -                
-           SHAREOPTIONS(1,3)                -                
-           NONINDEXED                       -                
-           REUSE)                         -                  
-     DATA (NAME(FRANCK.FINANCE.CLIENT.ESDSCR.DATA))          
-     IF LASTCC=0 THEN -                                      
-      REPRO INDATASET (FRANCK.FINANCE.CLIENT.CR) -           
-            OUTDATASET (FRANCK.FINANCE.CLIENT.ESDSCR)        
-      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.ESDSCR)     
-/*==============================================*/         
-/* -> CREATION DU ESDS DES CLIENTS DB           */         
-/*==============================================*/         
-    DEFINE CLUSTER (NAME(FRANCK.FINANCE.CLIENT.ESDSDB) -   
-           TRACK(1,1)                       -              
-           VOL(FDDBAS)                      -              
-           CISZ (4096)                      -              
-           RECORDSIZE(80,80)                -              
-           SHAREOPTIONS(1,3)                -              
-           NONINDEXED                       -              
-           REUSE)                         -                
-     DATA (NAME(FRANCK.FINANCE.CLIENT.ESDSDB.DATA))        
-     IF LASTCC=0 THEN -                                    
-      REPRO INDATASET (FRANCK.FINANCE.CLIENT.DB) -         
-            OUTDATASET (FRANCK.FINANCE.CLIENT.ESDSDB)      
-      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.ESDSDB)    
+      LISTCAT ALL LEVEL (FRANCK.FINANCE.CLIENT.KSDS)                      
 /*==============================================*/       
 /* -> CREATION DU KSDS DES REGIONS              */       
 /*==============================================*/       
