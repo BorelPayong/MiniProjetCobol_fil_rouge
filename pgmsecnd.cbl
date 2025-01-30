@@ -77,8 +77,7 @@
               WRITE REC-PRT                                            
               MOVE WS-LIGNE01 TO REC-PRT                               
               WRITE REC-PRT                                            
-           END-IF.       
-           END-IF.                                              
+           END-IF.                                                  
            MOVE LS-CODE TO WS-CODE-VALUE                        
            MOVE LS-LIBELLE TO WS-LIBELLE-VALUE                  
            MOVE WS-LIGNE03 TO REC-PRT                           
