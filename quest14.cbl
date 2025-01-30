@@ -84,7 +84,10 @@
            OPEN I-O FNATCOMP.                                      
            IF FS-NATCOMP = '00'                                    
               DISPLAY ' FILE NATURE COMPTE OPEN : ' FS-NATCOMP     
-           ELSE     
+           ELSE  
+              DISPLAY ' FILE NATURE COMPTE NOT OPEN : ' FS-NATCOMP        
+              PERFORM FONCTION-FIN-PROGRAMME
+           END-IF.
         FONCTION-PROGRAMME.                                       
            PERFORM FONCTION-PRINT-REGION                          
            PERFORM FONCTION-PRINT-ACTIPRO                         
