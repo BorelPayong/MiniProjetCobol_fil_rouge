@@ -21,9 +21,6 @@
 //*====================================================================                                      
 //STEPCOP1 EXEC PGM=IEBGENER                                            
 //SYSPRINT DD SYSOUT=*                                                  
-//SYSUT1 DD *  
-//STEPCOP1 EXEC PGM=IEBGENER                                            
-//SYSPRINT DD SYSOUT=*                                                  
 //SYSUT1 DD *                                                           
 1100335CLAUDE LECOQ        20000704F25CADR00007590000056129CR           
 4660325CHARLOTTE RAYNAUD   19770501M30CADR00000140000327028CR           
