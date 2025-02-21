@@ -110,10 +110,10 @@
            PERFORM FONCTION-READ-CLIENT                             
            PERFORM UNTIL WS-END-OF-FILE = 'Y'                       
               IF WS-POSIT = 'DB'                                    
-                MOVE WS-SOLDE TO WS-SOLDE-TOTAL-DB                  
+                ADD WS-SOLDE TO WS-SOLDE-TOTAL-DB 
                 ADD 1 TO WS-T-NBR-DB                                
               ELSE                                                  
-                MOVE WS-SOLDE TO WS-SOLDE-TOTAL-CR                  
+                ADD WS-SOLDE TO WS-SOLDE-TOTAL-CR                 
                 ADD 1 TO WS-T-NBR-CR                                
               END-IF                                                
               PERFORM FONCTION-READ-CLIENT                          
