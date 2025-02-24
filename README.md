@@ -1,5 +1,6 @@
 # MiniProjetCobol_fil_rouge
 Mini-Projet COBOL fil rouge - Suivi Clientèle Financière
+**(Dossier programme cobol et jcl)**
 
 Ce dépôt contient le code source et les fichiers JCL nécessaires à la réalisation d'un projet COBOL pour la gestion des clients et de leurs mouvements financiers. 
 Ce projet a été développé sous l'environnement **IBM Z/OS** et utilise les technologies **COBOL**, **JCL**, **VSAM** et divers utilitaires Z/OS comme **SORT** et **IDCAMS**.
@@ -31,8 +32,8 @@ pour la compilation des programmes : **compilpgm.jcl, compilsouspgm.jcl**
 pour exécuter les programmes : **execpgm.jcl, execpgmquest19.jcl**
 
 # MiniProjetCobol_fil_rouge
-Développement d’une application transactionnelle pour la gestion des clients d’une institution financière
-**(programme COBOL-CICS, MAP et JCL)**
+Mini-Projet COBOL fil rouge - gestion transactionnelle des clients d’une institution financière
+**(Dossier programme COBOL-CICS, MAP et JCL)**
 
 Ce dépôt contient le code source et les fichiers JCL nécessaires à la réalisation d’un projet **COBOL-CICS-VSAM** sous **IBM Z/OS**.
 L’application permet la gestion des clients via **une interface CICS**, avec des transactions permettant la création, mise à jour, affichage et suppression des clients stockés dans un fichier VSAM KSDS.
