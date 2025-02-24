@@ -15,20 +15,20 @@ L'objectif de ce projet est de mettre en place un système de gestion des client
 
 ### Partie 1 : Chargement des données
 - Création des fichiers nécessaires avec **IEBGENER** et **IDCAMS**.
-Fichiers concernés : creatfich.jcl, creatvsam.jcl
+Fichiers concernés : **creatfich.jcl, creatvsam.jcl**
 
 ### Partie 2 : Manipulation des données VSAM
 - Séparation des clients par profession, région ou type de compte.
 - Création et tri des fichiers avec **SORT**
-Fichiers concernés : creatps.jcl
+Fichiers concernés : **creatps.jcl**
 
 ### Partie 3 : Développement COBOL
 - Ajout, mise à jour et édition des données clients.
 - Calcul des totaux et des moyennes des comptes débiteurs/créditeurs.
 - Gestion des mouvements clients.
-Fichiers concernés : quest10.cbl, quest13.cbl, quest14.cbl, quest15.cbl, quest16.cbl, quest17.cbl, quest19.cbl, quest20.cbl, quest21.cbl, pgmsecnd.cbl
-pour la compilation des programmes : compilpgm.jcl, compilsouspgm.jcl
-pour exécuter les programmes : execpgm.jcl, execpgmquest19.jcl
+Fichiers concernés : **quest10.cbl, quest13.cbl, quest14.cbl, quest15.cbl, quest16.cbl, quest17.cbl, quest19.cbl, quest20.cbl, quest21.cbl, pgmsecnd.cbl**
+pour la compilation des programmes : **compilpgm.jcl, compilsouspgm.jcl**
+pour exécuter les programmes : **execpgm.jcl, execpgmquest19.jcl**
 
 # MiniProjetCobol_fil_rouge
 Développement d’une application transactionnelle pour la gestion des clients d’une institution financière
